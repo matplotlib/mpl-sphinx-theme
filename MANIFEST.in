@@ -1,0 +1,13 @@
+recursive-include mpl_sphinx_theme *.py
+recursive-include mpl_sphinx_theme *.html
+recursive-include mpl_sphinx_theme *.css
+recursive-include mpl_sphinx_theme *.svg
+recursive-include mpl_sphinx_theme *.png
+recursive-include mpl_sphinx_theme *.ico
+recursive-include mpl_sphinx_theme *.conf
+
+include setup.py
+include requirements.txt
+include README.rst
+include LICENSE.txt
+include MANIFEST.in
