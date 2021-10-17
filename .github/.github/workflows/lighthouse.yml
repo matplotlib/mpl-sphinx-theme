@@ -1,0 +1,28 @@
+name: Lighthouse
+on: [push, pull_request]
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+
+      - name: Install dask-sphinx-theme
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -e .
+
+      - name: Make example docs
+        run: |
+          cd docs
+          make html
+
+      - name: Run Lighthouse against example docs build
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          configPath: "./lighthouserc.json"
+          temporaryPublicStorage: true

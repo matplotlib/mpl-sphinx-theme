@@ -21,7 +21,7 @@ installation.
 
 Note that the theme does not currently install the `logo2.svg` or 
 the `favicon.ico`.  You shoudl copy those from `docs/_static` to 
-the local project `docs/_static`.
+the local project `docs/_static`. 
 
 The full ``conf.py`` is 
 
