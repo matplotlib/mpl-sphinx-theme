@@ -4,18 +4,14 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  pip-install:
-    executor: python/default
-    steps:
-      - checkout
-      - run:
-        name: install theme
-        command: python -m pip install --user -ve .
   build_docs:
     executor: python/default
     steps:
       - checkout
       - python/install-deps
+      - run:
+          name: install theme
+          command: python -m pip install --user -ve .      
       - run:
           name: Build docs
           command: cd docs/ && make html
