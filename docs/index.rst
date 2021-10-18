@@ -19,9 +19,10 @@ line in your conf.py file
 And by including ``mpl_sphinx_theme`` as a requirement in your documentation
 installation.
 
-Note that the theme does not currently install the `logo2.svg` or 
-the `favicon.ico`.  You shoudl copy those from `docs/_static` to 
-the local project `docs/_static`. 
+Note that the option ``html_logo`` need not be specified as it is for 
+``pydata-sphinx-theme``.
+
+To change the top navbar, edit ``mpl_sphinx_theme/mpl_nav_bar.html``
 
 The full ``conf.py`` is 
 

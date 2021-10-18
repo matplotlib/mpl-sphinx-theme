@@ -28,35 +28,12 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 # -- Options for HTML output -------------------------------------------------
 
 html_theme = "mpl_sphinx_theme"
-html_logo = "_static/logo2.svg"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
     "logo_link": "https://matplotlib.org/stable/",
     # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
-    "icon_links": [
-        {
-            "name": "gitter",
-            "url": "https://gitter.im/matplotlib",
-            "icon": "fab fa-gitter",
-        },
-        {
-            "name": "discourse",
-            "url": "https://discourse.matplotlib.org",
-            "icon": "fab fa-discourse",
-        },
-        {
-            "name": "GitHub",
-            "url": "https://github.com/matplotlib/matplotlib",
-            "icon": "fab fa-github-square",
-        },
-        {
-            "name": "twitter",
-            "url": "https://twitter.com/matplotlib/",
-            "icon": "fab fa-twitter-square",
-        },
-    ],
     "show_prev_next": False,
     "navbar_center": ["mpl_nav_bar.html"],
     "native_site": False
