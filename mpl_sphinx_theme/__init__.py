@@ -1,6 +1,6 @@
-from os import path
+from ._version import __version__
 
-from _version import __version__
+from os import path
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
