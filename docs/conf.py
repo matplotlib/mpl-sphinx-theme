@@ -59,6 +59,7 @@ html_theme_options = {
     ],
     "show_prev_next": False,
     "navbar_center": ["mpl_nav_bar.html"],
+    "native_site": False
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
