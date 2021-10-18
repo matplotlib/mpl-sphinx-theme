@@ -1,3 +1,5 @@
+import datetime
+
 # Configuration file for the Sphinx documentation builder for
 # matplotlib projects.
 
@@ -7,8 +9,10 @@ is_release_build = tags.has('release')  # noqa
 # -- Project information -----------------------------------------------------
 
 project = "Matplotlib Sphinx Theme"
-copyright = "2021, Matplotlib Contributors"
-author = "Matplotlib Contributors"
+copyright = (
+     f"2012 - {datetime.datetime.now().year} The Matplotlib development team"
+ )
+author = "Matplotlib Developers"
 
 
 # -- General configuration ---------------------------------------------------
@@ -35,7 +39,6 @@ html_theme_options = {
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
     "show_prev_next": False,
-    "navbar_center": ["mpl_nav_bar.html"],
     "native_site": False
 }
 

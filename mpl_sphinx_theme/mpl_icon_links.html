@@ -1,3 +1,4 @@
+{%- block icon_links -%}
 {%- macro icon_link_nav_item(url, icon, name) -%}
   {%- if url | length > 2 %}
         <li class="nav-item">
@@ -48,3 +49,4 @@
         </li>
       </ul>
 {%- endif %}  
+{%- endblock %}
