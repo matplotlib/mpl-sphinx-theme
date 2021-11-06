@@ -1,12 +1,14 @@
 from ._version import version_info, __version__
 
-from os import path
+from pathlib import Path
+
 
 def get_html_theme_path():
     """Return list of HTML theme paths."""
-    cur_dir = path.abspath(path.dirname(path.dirname(__file__)))
-    return cur_dir
+    return [str(Path(__file__).parent.parent.resolve())]
 
-# See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
+
+# See https://www.sphinx-doc.org/en/master/development/theming.html#distribute-your-theme-as-a-python-package
 def setup(app):
-    app.add_html_theme("mpl_sphinx_theme", path.abspath(path.dirname(__file__)))
+    app.add_html_theme("mpl_sphinx_theme",
+                       str(Path(__file__).parent.resolve()))
