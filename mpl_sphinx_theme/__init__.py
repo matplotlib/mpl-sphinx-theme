@@ -12,3 +12,4 @@ def get_html_theme_path():
 def setup(app):
     app.add_html_theme("mpl_sphinx_theme",
                        str(Path(__file__).parent.resolve()))
+    return {'version': __version__, 'parallel_read_safe': True}
