@@ -18,17 +18,17 @@ jobs:
         with:
           python-version: 3.7
 
-      - name: Install dask-sphinx-theme
+      - name: Install mpl-sphinx-theme
         run: |
           python -m pip install --upgrade pip
           python -m pip install -e .
 
-      - name: Build dask-sphinx-theme dist
+      - name: Build mpl-sphinx-theme dist
         run: |
           python -m pip install wheel twine
           python setup.py sdist bdist_wheel
 
-      - name: Publish dask-sphinx-theme
+      - name: Publish mpl-sphinx-theme
         uses: pypa/gh-action-pypi-publish@master
         with:
           user: __token__
