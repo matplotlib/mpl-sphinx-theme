@@ -1,3 +1,5 @@
+import os
+import time
 import datetime
 
 # Configuration file for the Sphinx documentation builder for
@@ -6,11 +8,17 @@ import datetime
 # Release mode enables optimizations and other related options.
 is_release_build = tags.has('release')  # noqa
 
+# Parse year using SOURCE_DATE_EPOCH, falling back to current time.
+# https://reproducible-builds.org/specs/source-date-epoch/
+build_date = datetime.datetime.utcfromtimestamp(
+    int(os.environ.get('SOURCE_DATE_EPOCH', time.time()))
+)
+
 # -- Project information -----------------------------------------------------
 
 project = "Matplotlib Sphinx Theme"
 copyright = (
-    f"2012 - {datetime.datetime.now().year} The Matplotlib development team"
+    f"2012 - {build_date.year} The Matplotlib development team"
 )
 author = "Matplotlib Developers"
 
