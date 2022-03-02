@@ -51,7 +51,12 @@ html_theme_options = {
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
     "show_prev_next": False,
-    "native_site": False
+    # Determines the type of links produced in the navigation header:
+    # - absolute: Links point to the URL https://matplotlib.org/...
+    # - server-stable: Links point to top-level of the server /...
+    # - internal: Links point to the internal files as expanded by the `pathto`
+    #   template function in Sphinx.
+    "navbar_links": "absolute",
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
