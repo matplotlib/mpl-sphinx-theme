@@ -34,6 +34,16 @@ To change the social icons, edit ``mpl_sphinx_theme/mpl_icon_links.html``
 
 To change the style, edit ``mpl_sphinx_theme/static/css/style.css``
 
+Building
+--------
+To build the theme with a sample page, navigate into the ``doc/`` directory and run
+
+.. code-block::
+
+   make html
+
+The built html pages can be found in ``doc/_build/html/``
+
 Releasing
 ---------
 
