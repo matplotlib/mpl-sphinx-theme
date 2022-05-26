@@ -12,10 +12,10 @@
 {%- if theme_icon_links %}  
       <ul id="navbar-icon-links" class="navbar-nav" aria-label="{{ _(theme_icon_links_label) }}">
         {%- block icon_link_shortcuts -%}
-        {{ icon_link_nav_item(theme_github_url, "fab fa-github-square", "GitHub") -}}
+        {{ icon_link_nav_item(theme_github_url, "fab fa-github", "GitHub") -}}
         {{ icon_link_nav_item(theme_gitlab_url, "fab fa-gitlab", "GitLab") -}}
         {{ icon_link_nav_item(theme_bitbucket_url, "fab fa-bitbucket", "Bitbucket") -}}
-        {{ icon_link_nav_item(theme_twitter_url, "fab fa-twitter-square", "Twitter") -}}
+        {{ icon_link_nav_item(theme_twitter_url, "fab fa-twitter", "Twitter") -}}
         {% endblock -%}
         {%- for icon_link in theme_icon_links -%}
         {{ icon_link_nav_item(icon_link["url"], icon_link["icon"], icon_link["name"]) -}}
@@ -26,25 +26,25 @@
         <li class="nav-item">
           <a class="nav-link" href="https://gitter.im/matplotlib" rel="noopener" target="_blank" title="gitter">
             <span><i class="fab fa-gitter"></i></span>
-            <label class="sr-only">gitter</label>
+            <label class="sr-only">Gitter</label>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://discourse.matplotlib.org" rel="noopener" target="_blank" title="discourse">
             <span><i class="fab fa-discourse"></i></span>
-            <label class="sr-only">discourse</label>
+            <label class="sr-only">Discourse</label>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/matplotlib/matplotlib" rel="noopener" target="_blank" title="GitHub">
-            <span><i class="fab fa-github-square"></i></span>
+            <span><i class="fab fa-github"></i></span>
             <label class="sr-only">GitHub</label>
           </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://twitter.com/matplotlib/" rel="noopener" target="_blank" title="twitter">
             <span><i class="fab fa-twitter"></i></span>
-            <label class="sr-only">twitter</label>
+            <label class="sr-only">Twitter</label>
           </a>
         </li>
       </ul>
