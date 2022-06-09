@@ -7,6 +7,16 @@ a:hover {
   color:  #CA7900;
 }
 
+html[data-theme="light"] {
+  --pst-color-primary: rgb(19, 6, 84);
+  --pst-color-text-base: rgb(51, 51, 51);
+}
+
+html[data-theme="dark"] {
+  --pst-color-primary: rgb(19, 6, 84);
+  --pst-color-text-base: rgb(240, 240, 240);
+}
+
 table.highlighttable {
   margin-left: 0.5em;
 }

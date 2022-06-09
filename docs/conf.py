@@ -42,7 +42,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "mpl_sphinx_theme"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
-    "logo_link": "https://matplotlib.org/stable/",
+    "logo": {"link": "https://matplotlib.org/stable/"},
     # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
