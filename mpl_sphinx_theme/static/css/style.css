@@ -9,6 +9,10 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
+<<<<<<< HEAD
+=======
+  --pst-color-primary: #1f77b4;
+>>>>>>> d3e324f (ENH: add dark theme switcher)
   --pst-color-text-base: rgb(240, 240, 240);
 }
 
