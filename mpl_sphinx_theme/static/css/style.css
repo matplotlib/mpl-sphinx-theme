@@ -1,19 +1,14 @@
-a {
-  color: #11557C;
-  text-decoration: none;
-}
-
-a:hover {
-  color:  #CA7900;
+html[data-theme="light"], html[data-theme="dark"] {
+  --pst-color-primary: rgb(19, 6, 84);
+  --pst-color-link: rgb(17, 85, 124);
+  --pst-color-link-hover: rgb(0, 60, 99);
 }
 
 html[data-theme="light"] {
-  --pst-color-primary: rgb(19, 6, 84);
   --pst-color-text-base: rgb(51, 51, 51);
 }
 
 html[data-theme="dark"] {
-  --pst-color-primary: rgb(19, 6, 84);
   --pst-color-text-base: rgb(240, 240, 240);
 }
 
