@@ -1,7 +1,7 @@
 import os
 import time
 import datetime
-
+import matplotlib  # noqa: F401
 # Configuration file for the Sphinx documentation builder for
 # matplotlib projects.
 
@@ -28,7 +28,9 @@ author = "Matplotlib Developers"
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'matplotlib.sphinxext.plot_directive',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 
@@ -42,7 +44,9 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "mpl_sphinx_theme"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
-    "logo": {"link": "https://matplotlib.org/stable/"},
+    "logo": {"link": "https://matplotlib.org/stable/",
+             "image_light": "images/logo2.svg",
+             "image_dark": "images/logo_dark.svg"},
     # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
