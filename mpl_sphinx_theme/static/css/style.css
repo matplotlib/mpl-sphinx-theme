@@ -1,15 +1,19 @@
 html[data-theme="light"] {
   --pst-color-primary: #11557c;
   --pst-color-text-base: rgb(51, 51, 51);
+  --sd-color-primary-text: rgb(250, 250, 250);
 }
 
 html[data-theme="dark"] {
-  --pst-color-primary: #65baeaff;
-  --pst-color-text-base: rgb(240, 240, 240);
+  --pst-color-primary: rgb(92, 150, 194);
+  --pst-color-text-base: rgb(250, 250, 250);
+  --sd-color-primary-text: rgb(51, 51, 51);
 }
 
+:root {
 --pst-color-link: var(--pst-color-primary);
 --pst-color-link-hover: var(--pst-color-secondary);
+}
 
 .sidebar-cheatsheets, .sidebar-donate {
   margin: 2.75rem 0;
