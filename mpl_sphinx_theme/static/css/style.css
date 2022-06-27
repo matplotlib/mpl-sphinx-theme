@@ -1,10 +1,5 @@
-html[data-theme="light"], html[data-theme="dark"] {
-  --pst-color-primary: #11557c;
-  --pst-color-link: rgb(17, 85, 124);
-  --pst-color-link-hover: rgb(0, 60, 99);
-}
-
 html[data-theme="light"] {
+  --pst-color-primary: #11557c;
   --pst-color-text-base: rgb(51, 51, 51);
 }
 
@@ -12,6 +7,9 @@ html[data-theme="dark"] {
   --pst-color-primary: #65baeaff;
   --pst-color-text-base: rgb(240, 240, 240);
 }
+
+--pst-color-link: var(--pst-color-primary);
+--pst-color-link-hover: var(--pst-color-secondary);
 
 .sidebar-cheatsheets, .sidebar-donate {
   margin: 2.75rem 0;
