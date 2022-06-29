@@ -1,16 +1,20 @@
-html[data-theme="light"], html[data-theme="dark"] {
-  --pst-color-primary: #11557c;
-  --pst-color-link: rgb(17, 85, 124);
-  --pst-color-link-hover: rgb(0, 60, 99);
-}
-
+/* rgb #11557c */
 html[data-theme="light"] {
+  --pst-color-primary: hsl(202, 76%, 28%);
   --pst-color-text-base: rgb(51, 51, 51);
+  --sd-color-primary-text: rgb(250, 250, 250);
+  --pst-color-link: hsl(202, 76%, 25%);
 }
 
 html[data-theme="dark"] {
-  --pst-color-primary: #65baeaff;
-  --pst-color-text-base: rgb(240, 240, 240);
+  --pst-color-primary: rgb(70, 152, 198);
+  --pst-color-text-base: rgb(250, 250, 250);
+  --sd-color-primary-text: rgb(51, 51, 51);
+  --pst-color-link: hsl(202, 53%, 80%);
+}
+
+:root {
+--pst-color-link-hover: var(--pst-color-secondary);
 }
 
 .sidebar-cheatsheets, .sidebar-donate {
