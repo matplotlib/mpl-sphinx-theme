@@ -1,49 +1,23 @@
-{% if theme_native_site %}
 <ul id="navbar-main-elements" class="navbar-nav">
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('plot_types/index') }}">Plot types</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('plot_types/index') }}">Plot types</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('gallery/index') }}">Examples</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('gallery/index') }}">Examples</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('tutorials/index') }}">Tutorials</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('tutorials/index') }}">Tutorials</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('api/index') }}">Reference</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('api/index') }}">Reference</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('users/index') }}">User guide</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('users/index') }}">User guide</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('devel/index') }}">Develop</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('devel/index') }}">Develop</a>
   </li>
   <li class="nav-item">
-    <a class="reference internal nav-link" href="{{ pathto('users/release_notes') }}">Release notes</a>
+    <a class="reference internal nav-link" href="{{ mpl_path('users/release_notes') }}">Release notes</a>
   </li>
 </ul>
-{% else %}
-<ul id="navbar-main-elements" class="navbar-nav">
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/plot_types/index">Plot types</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/gallery/index">Examples</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/tutorials/index">Tutorials</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/api/index">Reference</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/index">Usage guide</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/devel/index">Develop</a>
-  </li>
-  <li class="nav-item">
-    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/release_notes">Release notes</a>
-  </li>
-</ul>
-{% endif %}
