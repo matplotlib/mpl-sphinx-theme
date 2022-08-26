@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Welcome to Matplotlib Sphinx Theme’s documentation! &#8212; Matplotlib Sphinx Theme  documentation</title>
+<script>
+  document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+  document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
+</script>
+
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=92025949c220c2e29695" rel="stylesheet">
+
+
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+    <div class="bd-header-announcement container-fluid" id="banner">
+      
+
+    </div>
+
+    
+    <nav class="bd-header navbar navbar-light navbar-expand-lg bg-light fixed-top bd-navbar" id="navbar-main"><div class="bd-header__inner container-xl">
+
+  <div id="navbar-start">
+    
+    
+  
+  
+
+
+<a class="navbar-brand logo" href="https%3A//matplotlib.org/stable/.html">
+  
+  
+  
+  
+    <img src="_static/images/logo2.svg" class="logo__image only-light" alt="Logo image">
+    <img src="_static/images/logo_dark.svg" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapsible" aria-controls="navbar-collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="fas fa-bars"></span>
+  </button>
+
+  
+  <div id="navbar-collapsible" class="col-lg-9 collapse navbar-collapse">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <ul id="navbar-main-elements" class="navbar-nav">
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/plot_types/index">Plot types</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/gallery/index">Examples</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/tutorials/index">Tutorials</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/api/index">Reference</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/index">User guide</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/devel/index">Develop</a>
+  </li>
+  <li class="nav-item">
+    <a class="reference internal nav-link" href="https://matplotlib.org/stable/users/release_notes">Release notes</a>
+  </li>
+</ul>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          <a class="nav-link" href="https://gitter.im/matplotlib" rel="noopener" target="_blank" title="Gitter"><span><i class="fab fa-gitter"></i></span>
+            <label class="sr-only">Gitter</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://discourse.matplotlib.org" rel="noopener" target="_blank" title="Discourse"><span><i class="fab fa-discourse"></i></span>
+            <label class="sr-only">Discourse</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/matplotlib/matplotlib" rel="noopener" target="_blank" title="GitHub"><span><i class="fab fa-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://twitter.com/matplotlib/" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+      </ul>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span id="theme-switch" class="btn btn-sm btn-outline-primary navbar-btn rounded-circle">
+    <a class="theme-switch" data-mode="light"><i class="fas fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="far fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fas fa-adjust"></i></a>
+</span>
+      </div>
+      
+    </div>
+  </div>
+</div>
+    </nav>
+    
+
+    <div class="bd-container container-xl">
+      <div class="bd-container__inner row">
+          
+
+<!-- Only show if we have sidebars configured, else just a small margin  -->
+<div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
+  </div>
+  <div class="sidebar-end-items">
+  </div>
+</div>
+
+
+          
+
+
+<div class="bd-sidebar-secondary d-none d-xl-block col-xl-2 bd-toc">
+  
+    
+    <div class="toc-item">
+      
+<div class="tocsection onthispage mt-5 pt-1 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#example-plot">
+   Example plot
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#configuration-for-this-demo">
+   Configuration for this demo
+  </a>
+ </li>
+</ul>
+
+</nav>
+    </div>
+    
+    <div class="toc-item">
+      
+    </div>
+    
+  
+</div>
+
+
+          
+          
+          <div class="bd-content col-12 col-md-9 col-xl-7">
+              
+              <article class="bd-article" role="main">
+                
+  <section id="welcome-to-matplotlib-sphinx-theme-s-documentation">
+<h1>Welcome to Matplotlib Sphinx Theme’s documentation!<a class="headerlink" href="#welcome-to-matplotlib-sphinx-theme-s-documentation" title="Permalink to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<p>This is the official Sphinx theme for Matplotlib documentation.
+It extends the <code class="docutils literal notranslate"><span class="pre">pydata_sphinx_theme</span></code> project <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/en/stable/">https://pydata-sphinx-theme.readthedocs.io/en/stable/</a>,
+but adds custom
+styling and a navigation bar.</p>
+<p>When creating a Matplotlib subproject you can include this theme by changing this
+line in your conf.py file</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme</span> <span class="o">=</span> <span class="s1">&#39;mpl_sphinx_theme&#39;</span>
+</pre></div>
+</div>
+<p>And by including <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme</span></code> as a requirement in your documentation
+installation.</p>
+<p>There are three main templates that replace the defaults in <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">navbar_start</span> <span class="o">=</span> <span class="n">mpl_navbar_logo</span><span class="o">.</span><span class="n">html</span>
+<span class="n">navbar_center</span> <span class="o">=</span> <span class="n">mpl_nav_bar</span><span class="o">.</span><span class="n">html</span>
+<span class="n">navbar_end</span> <span class="o">=</span> <span class="n">mpl_icon_links</span><span class="o">.</span><span class="n">html</span>
+</pre></div>
+</div>
+<p>Note that the option <code class="docutils literal notranslate"><span class="pre">html_logo</span></code> need not be specified as it is included
+in <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_navbar_logo.html</span></code>.  The logo is stored at
+<code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/static/images/logo2.svg</span></code>.</p>
+<p>To change the top navbar, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_nav_bar.html</span></code></p>
+<p>To change the social icons, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_icon_links.html</span></code></p>
+<p>To change the style, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/static/css/style.css</span></code></p>
+<section id="example-plot">
+<h2>Example plot<a class="headerlink" href="#example-plot" title="Permalink to this heading">#</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;t [s]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;S [V]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sine wave&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>(<a class="reference external" href=".//index-1.py">Source code</a>, <a class="reference external" href=".//index-1.png">png</a>, <a class="reference external" href=".//index-1.hires.png">hires.png</a>, <a class="reference external" href=".//index-1.pdf">pdf</a>)</p>
+<figure class="align-center">
+<img alt="_images/index-1.png" class="plot-directive" src="_images/index-1.png" />
+</figure>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">),</span> <span class="n">constrained_layout</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">pcolormesh</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;t [s]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;S [V]&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Sine wave&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>(<a class="reference external" href=".//index-2.py">Source code</a>, <a class="reference external" href=".//index-2.png">png</a>, <a class="reference external" href=".//index-2.hires.png">hires.png</a>, <a class="reference external" href=".//index-2.pdf">pdf</a>)</p>
+<figure class="align-center">
+<img alt="_images/index-2.png" class="plot-directive" src="_images/index-2.png" />
+</figure>
+</section>
+<section id="configuration-for-this-demo">
+<h2>Configuration for this demo<a class="headerlink" href="#configuration-for-this-demo" title="Permalink to this heading">#</a></h2>
+<p>The full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> is</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
+<span class="kn">import</span> <span class="nn">matplotlib</span>  <span class="c1"># noqa: F401</span>
+<span class="c1"># Configuration file for the Sphinx documentation builder for</span>
+<span class="c1"># matplotlib projects.</span>
+
+<span class="c1"># Release mode enables optimizations and other related options.</span>
+<span class="n">is_release_build</span> <span class="o">=</span> <span class="n">tags</span><span class="o">.</span><span class="n">has</span><span class="p">(</span><span class="s1">&#39;release&#39;</span><span class="p">)</span>  <span class="c1"># noqa</span>
+
+<span class="c1"># Parse year using SOURCE_DATE_EPOCH, falling back to current time.</span>
+<span class="c1"># https://reproducible-builds.org/specs/source-date-epoch/</span>
+<span class="n">build_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcfromtimestamp</span><span class="p">(</span>
+    <span class="nb">int</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;SOURCE_DATE_EPOCH&#39;</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()))</span>
+<span class="p">)</span>
+
+<span class="c1"># -- Project information -----------------------------------------------------</span>
+
+<span class="n">project</span> <span class="o">=</span> <span class="s2">&quot;Matplotlib Sphinx Theme&quot;</span>
+<span class="n">copyright</span> <span class="o">=</span> <span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;2012 - </span><span class="si">{</span><span class="n">build_date</span><span class="o">.</span><span class="n">year</span><span class="si">}</span><span class="s2"> The Matplotlib development team&quot;</span>
+<span class="p">)</span>
+<span class="n">author</span> <span class="o">=</span> <span class="s2">&quot;Matplotlib Developers&quot;</span>
+
+
+<span class="c1"># -- General configuration ---------------------------------------------------</span>
+
+<span class="c1"># Add any Sphinx extension module names here, as strings. They can be</span>
+<span class="c1"># extensions coming with Sphinx (named &#39;sphinx.ext.*&#39;) or your custom</span>
+<span class="c1"># ones.</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s1">&#39;matplotlib.sphinxext.plot_directive&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
+
+<span class="c1"># List of patterns, relative to source directory, that match files and</span>
+<span class="c1"># directories to ignore when looking for source files.</span>
+<span class="c1"># This pattern also affects html_static_path and html_extra_path.</span>
+<span class="n">exclude_patterns</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;_build&quot;</span><span class="p">,</span> <span class="s2">&quot;Thumbs.db&quot;</span><span class="p">,</span> <span class="s2">&quot;.DS_Store&quot;</span><span class="p">]</span>
+
+<span class="c1"># -- Options for HTML output -------------------------------------------------</span>
+
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">&quot;mpl_sphinx_theme&quot;</span>
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="s2">&quot;_static/favicon.ico&quot;</span>
+<span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;logo&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;link&quot;</span><span class="p">:</span> <span class="s2">&quot;https://matplotlib.org/stable/&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;image_light&quot;</span><span class="p">:</span> <span class="s2">&quot;images/logo2.svg&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;image_dark&quot;</span><span class="p">:</span> <span class="s2">&quot;images/logo_dark.svg&quot;</span><span class="p">},</span>
+    <span class="c1"># collapse_navigation in pydata-sphinx-theme is slow, so skipped for local</span>
+    <span class="c1"># and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386</span>
+    <span class="s2">&quot;collapse_navigation&quot;</span><span class="p">:</span> <span class="ow">not</span> <span class="n">is_release_build</span><span class="p">,</span>
+    <span class="s2">&quot;show_prev_next&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+    <span class="c1"># Determines the type of links produced in the navigation header:</span>
+    <span class="c1"># - absolute: Links point to the URL https://matplotlib.org/...</span>
+    <span class="c1"># - server-stable: Links point to top-level of the server /stable/...</span>
+    <span class="c1"># - internal: Links point to the internal files as expanded by the `pathto`</span>
+    <span class="c1">#   template function in Sphinx.</span>
+    <span class="s2">&quot;navbar_links&quot;</span><span class="p">:</span> <span class="s2">&quot;absolute&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
+<span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
+<span class="c1"># so a file named &quot;default.css&quot; will overwrite the builtin &quot;default.css&quot;.</span>
+<span class="c1"># html_static_path = [&quot;static&quot;]</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+              </article>
+              
+
+              
+          </div>
+          
+      </div>
+    </div>
+
+  
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695"></script>
+
+<footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    <p class="copyright">
+    &copy; Copyright 2012 - 2022 The Matplotlib development team.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    <p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 5.1.1.<br>
+</p>
+  </div>
+  
+</div>
+</footer>
+  </body>
+</html>
