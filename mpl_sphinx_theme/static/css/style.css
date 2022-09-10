@@ -20,3 +20,7 @@ html[data-theme="dark"] {
 .sidebar-cheatsheets, .sidebar-donate {
   margin: 2.75rem 0;
 }
+
+#navbar-icon-links .nav-link {
+  color: #989898;
+}
