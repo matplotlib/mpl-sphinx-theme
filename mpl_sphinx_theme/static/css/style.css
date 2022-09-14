@@ -26,9 +26,10 @@ html[data-theme="dark"] {
 }
 
 #navbar-icon-links .nav-link {
-  color: var(--pst-color-link);
+  color: #989898;
 }
 
 #navbar-icon-links .nav-link:hover {
-  color: var(--pst-color-link-hover);
+  color: var(--pst-color-primary);
 }
+
