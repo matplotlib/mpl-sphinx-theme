@@ -21,6 +21,15 @@ html[data-theme="dark"] {
   margin: 2.75rem 0;
 }
 
+#navbar-icon-links {
+    margin-left: 1.5em;
+}
+
 #navbar-icon-links .nav-link {
   color: #989898;
 }
+
+#navbar-icon-links .nav-link:hover {
+  color: var(--pst-color-primary);
+}
+
