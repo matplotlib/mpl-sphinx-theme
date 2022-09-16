@@ -50,6 +50,8 @@ Releasing
 Manually for now... see the todo below for how we hope to eventually do it
 automagically.
 
+- be sure to edit `mpl_sphinx_theme/_version.py`
+
 .. code-block::
 
    $ git checkout <commit-hash>
