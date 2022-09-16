@@ -22,11 +22,11 @@ There are three main templates that replace the defaults in ``pydata-sphinx-them
 
    navbar_start = mpl_navbar_logo.html
    navbar_center = mpl_nav_bar.html
-   navbar_end = mpl_icon_links.html   
+   navbar_end = mpl_icon_links.html
 
-Note that the option ``html_logo`` need not be specified as it is included 
-in ``mpl_sphinx_theme/mpl_navbar_logo.html``.  The logo is stored at 
-``mpl_sphinx_theme/static/images/logo2.svg``.  
+Note that the option ``html_logo`` need not be specified as it is included
+in ``mpl_sphinx_theme/mpl_navbar_logo.html``.  The logo is stored at
+``mpl_sphinx_theme/static/images/logo2.svg``.
 
 To change the top navbar, edit ``mpl_sphinx_theme/mpl_nav_bar.html``
 
@@ -47,8 +47,10 @@ The built html pages can be found in ``doc/_build/html/``
 Releasing
 ---------
 
-Manually for now... see the todo below for how we hope to eventually do it 
+Manually for now... see the todo below for how we hope to eventually do it
 automagically.
+
+- be sure to edit `mpl_sphinx_theme/_version.py`
 
 .. code-block::
 
