@@ -57,8 +57,7 @@ automagically.
    $ git checkout <commit-hash>
    $ git tag -a x.y.z -m 'Version x.y.z'
    $ git push upstream main --tags
-   $ python setup.py sdist
-   $ python setup.py bdist_wheel
+   $ python -m build -s -w
    $ twine upload dist/mpl_sphinx_theme-x.y.z*
 
 TODO: This project `uses GitHub Actions <https://github.com/matplotlib/mpl-sphinx-theme/blob/main/.github/workflows/publish-pypi.yml>`_
