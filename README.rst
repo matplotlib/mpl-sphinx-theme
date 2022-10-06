@@ -4,6 +4,9 @@ Matplotlib Sphinx Theme
 This is the official Sphinx theme for Matplotlib documentation.  It extends the
 ``pydata-sphinx-theme`` project, but adds custom styling and a navigation bar.
 
+A demo of the theme built with the ``main`` branch can be seen at
+https://matplotlib.org/mpl-sphinx-theme/.
+
 When creating a Matplotlib subproject you can include this theme by changing this
 line in your ``conf.py`` file
 
