@@ -38,7 +38,7 @@ jobs:
             git config --global user.name "MatplotlibCircleBot"
       - add_ssh_keys:
           fingerprints:
-            - "25:2e:77:93:7e:0e:af:77:b0:be:e7:fe:86:2c:5b:96"
+            - "fc:4f:e4:b8:3f:28:43:83:4a:6b:ba:30:4a:df:56:6f"
       - run:
           name: "Deploy new docs"
           command: |
