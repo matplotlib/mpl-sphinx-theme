@@ -63,6 +63,14 @@ automagically.
    $ python -m build -s -w
    $ twine upload dist/mpl_sphinx_theme-x.y.z*
 
+Update the requirements for the following sites which use ``mpl-sphinx-theme``:
+
+* matplotlib/matplotlib: requirements/doc/doc-requirements.txt
+* matplotlib/mpl-brochure-site: requirements.txt
+* matplotlib/mpl-third-party: docs/requirements.txt
+* matplotlib/governance: requirements-doc.txt
+* matplotlib/mpl-gui: requirements-doc.txt
+
 TODO: This project `uses GitHub Actions <https://github.com/matplotlib/mpl-sphinx-theme/blob/main/.github/workflows/publish-pypi.yml>`_
 to automatically push a new release to PyPI whenever
 a git tag is pushed. For example, to release a new ``x.y.z`` version of
