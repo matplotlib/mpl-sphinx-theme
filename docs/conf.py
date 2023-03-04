@@ -44,9 +44,11 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "mpl_sphinx_theme"
 html_favicon = "_static/favicon.ico"
 html_theme_options = {
-    "logo": {"link": "https://matplotlib.org/stable/",
-             "image_light": "images/logo2.svg",
-             "image_dark": "images/logo_dark.svg"},
+    # logo is installed by mpl-sphinx-theme as:
+    # "logo": {"link": "https://matplotlib.org/stable/",
+    #         "image_light": "_static/logo2.svg",
+    #         "image_dark": "_static/logo_dark.svg"},
+    # if this default is OK, then no need to modify "logo"
     # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
     # and CI builds https://github.com/pydata/pydata-sphinx-theme/pull/386
     "collapse_navigation": not is_release_build,
@@ -62,4 +64,4 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ["static"]
+# html_static_path = ["_static"]
