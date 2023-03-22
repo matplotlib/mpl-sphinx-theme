@@ -28,7 +28,7 @@ There are two main templates that replace the defaults in ``pydata-sphinx-theme`
 
 Note that the logo options need not be specified as they are included in theme
 initialization. The logo is stored at
-``mpl_sphinx_theme/static/images/logo2.svg``.
+``mpl_sphinx_theme/static/logo_{light,dark}.svg``.
 
 To change the top navbar, edit ``mpl_sphinx_theme/mpl_nav_bar.html``
 

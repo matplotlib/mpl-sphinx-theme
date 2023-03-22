@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def set_config_defaults(app):
-
+    """Set default logo in theme options."""
     try:
         theme = app.builder.theme_options
     except AttributeError:
@@ -17,7 +17,7 @@ def set_config_defaults(app):
     if "image_dark" not in logo:
         logo["image_dark"] = "_static/logo_dark.svg"
     if "image_light" not in logo:
-        logo["image_light"] = "_static/logo2.svg"
+        logo["image_light"] = "_static/logo_light.svg"
     if "link" not in logo:
         logo["link"] = "https://matplotlib.org/stable/"
     theme["logo"] = logo
