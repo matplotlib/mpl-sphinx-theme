@@ -109,7 +109,7 @@
       
     
     
-    <img src="_static/logo2.svg" class="logo__image only-light" alt="Logo image"/>
+    <img src="_static/logo_light.svg" class="logo__image only-light" alt="Logo image"/>
     <script>document.write(`<img src="_static/logo_dark.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
   
   
@@ -398,15 +398,14 @@ line in your conf.py file</p>
 </div>
 <p>And by including <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme</span></code> as a requirement in your documentation
 installation.</p>
-<p>There are three main templates that replace the defaults in <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">navbar_start</span> <span class="o">=</span> <span class="n">mpl_navbar_logo</span><span class="o">.</span><span class="n">html</span>
-<span class="n">navbar_center</span> <span class="o">=</span> <span class="n">mpl_nav_bar</span><span class="o">.</span><span class="n">html</span>
+<p>There are two main templates that replace the defaults in <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">navbar_center</span> <span class="o">=</span> <span class="n">mpl_nav_bar</span><span class="o">.</span><span class="n">html</span>
 <span class="n">navbar_end</span> <span class="o">=</span> <span class="n">mpl_icon_links</span><span class="o">.</span><span class="n">html</span>
 </pre></div>
 </div>
-<p>Note that the option <code class="docutils literal notranslate"><span class="pre">html_logo</span></code> need not be specified as it is included
-in <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_navbar_logo.html</span></code>.  The logo is stored at
-<code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/static/images/logo2.svg</span></code>.</p>
+<p>Note that the logo options need not be specified as they are included in theme
+initialization. The logo is stored at
+<code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/static/logo_{light,dark}.svg</span></code>.</p>
 <p>To change the top navbar, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_nav_bar.html</span></code></p>
 <p>To change the social icons, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/mpl_icon_links.html</span></code></p>
 <p>To change the style, edit <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme/static/css/style.css</span></code></p>
@@ -497,7 +496,7 @@ in <code class="docutils literal notranslate"><span class="pre">mpl_sphinx_theme
 <span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="c1"># logo is installed by mpl-sphinx-theme as:</span>
     <span class="c1"># &quot;logo&quot;: {&quot;link&quot;: &quot;https://matplotlib.org/stable/&quot;,</span>
-    <span class="c1">#         &quot;image_light&quot;: &quot;_static/logo2.svg&quot;,</span>
+    <span class="c1">#         &quot;image_light&quot;: &quot;_static/logo_light.svg&quot;,</span>
     <span class="c1">#         &quot;image_dark&quot;: &quot;_static/logo_dark.svg&quot;},</span>
     <span class="c1"># if this default is OK, then no need to modify &quot;logo&quot;</span>
     <span class="c1"># collapse_navigation in pydata-sphinx-theme is slow, so skipped for local</span>
