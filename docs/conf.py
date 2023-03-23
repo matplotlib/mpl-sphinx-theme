@@ -46,7 +46,7 @@ html_favicon = "_static/favicon.ico"
 html_theme_options = {
     # logo is installed by mpl-sphinx-theme as:
     # "logo": {"link": "https://matplotlib.org/stable/",
-    #         "image_light": "_static/logo2.svg",
+    #         "image_light": "_static/logo_light.svg",
     #         "image_dark": "_static/logo_dark.svg"},
     # if this default is OK, then no need to modify "logo"
     # collapse_navigation in pydata-sphinx-theme is slow, so skipped for local
