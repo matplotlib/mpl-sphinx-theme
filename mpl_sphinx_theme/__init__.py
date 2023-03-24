@@ -33,9 +33,21 @@ def get_html_theme_path():
 
 def setup_html_page_context(app, pagename, templatename, context, doctree):
     """Add a mpl_path template function."""
+    # Pick link setting based on release mode. Theme users may specify either:
+    # 1. a single string indicating the mode for navbar links;
+    # 2. a tuple of two strings, the first being the mode for development, and
+    #    the second being the mode for release.
+    # Release mode is determined by specifying the 'release' tag during build.
     navbar_links = context['theme_navbar_links']
-    if navbar_links not in ['internal', 'absolute', 'server-stable']:
+    if not isinstance(navbar_links, tuple):
+        # Allow a single string for backwards compatibility.
+        navbar_links = (navbar_links, navbar_links)
+    if (len(navbar_links) != 2 or
+            any(opt not in ['internal', 'absolute', 'server-stable']
+                for opt in navbar_links)):
         raise ValueError(f'Invalid navbar_links theme option: {navbar_links}')
+    navbar_links = (navbar_links[1] if app.tags.has('release') else
+                    navbar_links[0])
 
     def mpl_path(path):
         if navbar_links == 'internal':
