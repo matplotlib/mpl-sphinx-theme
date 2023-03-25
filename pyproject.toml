@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mpl_sphinx_theme"
+dynamic = ["version"]
+description = "Matplotlib theme for Sphinx"
+readme = "README.rst"
+requires-python = ">=3"
+license = {file = "LICENSE.txt"}
+authors = [
+    {name = "Matplotlib Developers"},
+]
+classifiers = [
+    "Framework :: Sphinx :: Theme",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Documentation",
+    "Topic :: Documentation :: Sphinx",
+]
+dependencies = [
+    "pydata-sphinx-theme>=0.13.1",
+    "matplotlib",
+]
+
+[project.urls]
+homepage = "https://matplotlib.org/mpl-sphinx-theme/"
+repository = "https://github.com/matplotlib/mpl-sphinx-theme"
+
+# http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
+[project.entry-points."sphinx.html_themes"]
+mpl_sphinx_theme = "mpl_sphinx_theme"
+
+[tool.setuptools]
+packages = ["mpl_sphinx_theme"]
+zip-safe = false
+
+[tool.setuptools.dynamic]
+version = {attr = "mpl_sphinx_theme.__version__"}
+
+[tool.setuptools.package-data]
+mpl_sphinx_theme = [
+    "theme.conf",
+    "*.html",
+    "static/css/*.css",
+    "static/images/*.svg",
+    "static/images/*.ico",
+    "static/js/*.js",
+    "static/font/*.*",
+    "components/*.html",
+]
