@@ -63,7 +63,7 @@ automagically.
    $ python -m build -s -w
    $ twine upload dist/mpl_sphinx_theme-x.y.z*
 
-Update the requirements for the following sites which use ``mpl-sphinx-theme``:
+Update the required ``mpl-sphinx-theme`` version in the following files:
 
 * matplotlib/matplotlib: requirements/doc/doc-requirements.txt
 * matplotlib/mpl-brochure-site: requirements.txt
