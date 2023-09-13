@@ -43,7 +43,7 @@ mpl_sphinx_theme = [
     "theme.conf",
     "*.html",
     "static/css/*.css",
-    "static/images/*.svg",
+    "static/*.svg",
     "static/images/*.ico",
     "static/js/*.js",
     "static/font/*.*",
