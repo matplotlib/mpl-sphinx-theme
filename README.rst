@@ -49,18 +49,25 @@ The built html pages can be found in ``doc/_build/html/``
 Releasing
 ---------
 
-Manually for now... see the todo below for how we hope to eventually do it
-automagically.
+This project `uses GitHub Actions
+<https://github.com/matplotlib/mpl-sphinx-theme/blob/main/.github/workflows/release.yml>`_
+to automatically push a new release to PyPI whenever a release is made.
+
+For example, to release a new ``3.9.0`` version of ``mpl-sphinx-theme``:
 
 - be sure to edit `mpl_sphinx_theme/_version.py`
+- checkout the commit you would like to release
+- add a git tag
+- push the tag to the ``matplotlib/mpl-sphinx-theme`` repository
 
 .. code-block::
 
    $ git checkout <commit-hash>
-   $ git tag -a x.y.z -m 'Version x.y.z'
-   $ git push upstream main --tags
-   $ python -m build -s -w
-   $ twine upload dist/mpl_sphinx_theme-x.y.z*
+   $ git tag -s -a v3.9.0 -m 'REL: 3.9.0'
+   $ git push upstream --tags
+
+Finally, `turn the tag into a GitHub release
+<https://github.com/matplotlib/mpl-sphinx-theme/releases/new>`_.
 
 Update the required ``mpl-sphinx-theme`` version in the following files:
 
@@ -69,14 +76,3 @@ Update the required ``mpl-sphinx-theme`` version in the following files:
 * matplotlib/mpl-third-party: docs/requirements.txt
 * matplotlib/governance: requirements-doc.txt
 * matplotlib/mpl-gui: requirements-doc.txt
-
-TODO: This project `uses GitHub Actions <https://github.com/matplotlib/mpl-sphinx-theme/blob/main/.github/workflows/publish-pypi.yml>`_
-to automatically push a new release to PyPI whenever
-a git tag is pushed. For example, to release a new ``x.y.z`` version of
-``mpl-sphinx-theme``, checkout the commit you would like to release,
-add a git tag, and push the tag to the ``main`` branch of the
-``matplotlib/mpl-sphinx-theme`` repository:
-
-TODO: After a new release is published on PyPI, a pull request to the ``mpl-sphinx-theme``
-`conda-forge feedstock <https://github.com/conda-forge/mpl-sphinx-theme-feedstock>`_
-for the new ``x.y.z`` release will automatically be opened by conda-forge bots.
