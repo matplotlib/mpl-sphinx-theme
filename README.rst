@@ -38,10 +38,11 @@ To change the style, edit ``mpl_sphinx_theme/static/css/style.css``
 
 Overriding hard coded elements
 ------------------------------
-This theme is designed to be used with subprojects that are part of the main
+This theme is primarily designed to be used with subprojects that are part of the main
 Matplotlib webiste (e.g., [our cheatseets](https://github.com/matplotlib/cheatsheets]
 and [list of third-party packages](https://github.com/matplotlib/mpl-third-party)).
-As such several elements are hard coded, that other subprojects may want to override.
+As such several elements are hard coded. However, the theme may also be used by
+other subprojects that need to change the hard-coded defaults.
 The following sections explain how to reset these back to their defaults by modifying
 ``html_theme_options`` in ``conf.py``.
 
