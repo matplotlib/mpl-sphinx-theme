@@ -36,6 +36,20 @@ To change the social icons, edit ``mpl_sphinx_theme/mpl_icon_links.html``
 
 To change the style, edit ``mpl_sphinx_theme/static/css/style.css``
 
+Overriding hard coded elements
+------------------------------
+This theme is primarily designed to be used with subprojects that are part of the main
+Matplotlib webiste (e.g., [our cheatseets](https://github.com/matplotlib/cheatsheets]
+and [list of third-party packages](https://github.com/matplotlib/mpl-third-party)).
+As such several elements are hard coded. However, the theme may also be used by
+other subprojects that need to change the hard-coded defaults.
+The following sections explain how to reset these back to their defaults by modifying
+``html_theme_options`` in ``conf.py``.
+
+Header section links
+~~~~~~~~~~~~~~~~~~~~
+Use a copy of [the default pydata-sphinx-theme navbar](https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/components/navbar-nav.html) and set the ``'navbar_center'`` key to this HTML file in ``html_theme_options``.
+
 Building
 --------
 To build the theme with a sample page, navigate into the ``doc/`` directory and run
