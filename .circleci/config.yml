@@ -2,7 +2,7 @@
 version: 2.1
 
 orbs:
-  python: circleci/python@1.2.1
+  python: circleci/python@3.0.0
 
 jobs:
   build_docs:
@@ -31,9 +31,7 @@ jobs:
       - run:
           name: Install and configure dependencies
           command: |
-            # Old version used because of gh-pages bug:
-            # https://github.com/tschaub/gh-pages/issues/354
-            npm install -g --silent gh-pages@3.0.0
+            npm install -g --silent gh-pages
             git config --global user.email "MatplotlibCircleBot@nomail"
             git config --global user.name "MatplotlibCircleBot"
       - add_ssh_keys:
