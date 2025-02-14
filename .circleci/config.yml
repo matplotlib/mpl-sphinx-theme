@@ -10,6 +10,7 @@ jobs:
     steps:
       - checkout
       - python/install-packages:
+          args: --upgrade --upgrade-strategy=eager
           pkg-manager: pip-dist
           pip-dependency-file: docs/requirements.txt
       - run:
