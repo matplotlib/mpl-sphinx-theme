@@ -17,14 +17,6 @@ html[data-theme="dark"] {
   --pst-color-link-hover: var(--pst-color-secondary);
 }
 
-.sidebar-cheatsheets > h3 {
-  margin-top: 0;
-}
-
-.sidebar-cheatsheets > img {
-  width: 100%;
-}
-
 .sidebar-donate > .sd-btn {
   width: 100%;
 }
