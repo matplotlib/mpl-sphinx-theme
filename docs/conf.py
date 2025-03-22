@@ -29,7 +29,8 @@ author = "Matplotlib Developers"
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'matplotlib.sphinxext.plot_directive',
+    "matplotlib.sphinxext.plot_directive",
+    "sphinx_design"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -59,6 +60,12 @@ html_theme_options = {
     # - internal: Links point to the internal files as expanded by the `pathto`
     #   template function in Sphinx.
     "navbar_links": "absolute",
+}
+
+html_sidebars = {
+    "index": [
+        "donate_sidebar.html",
+    ],
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

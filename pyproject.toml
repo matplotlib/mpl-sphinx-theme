@@ -21,6 +21,7 @@ classifiers = [
 dependencies = [
     "pydata-sphinx-theme>=0.13.1",
     "matplotlib",
+    "sphinx-design",
 ]
 
 [project.urls]
