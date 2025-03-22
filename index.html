@@ -29,8 +29,9 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=86e00652" />
+    <link rel="stylesheet" type="text/css" href="_static/css/style.css?v=f16eb9d3" />
     <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -40,6 +41,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=b3ba4146"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="icon" href="_static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
@@ -256,7 +258,7 @@ document.write(`
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -350,6 +352,14 @@ document.write(`
       </div>
     
   </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><div class="sidebar-donate">
+    <a class="sd-btn sd-btn-primary sd-fs-5 sd-px-5 sd-py-2" href="https://numfocus.org/donate-to-matplotlib" target="_blank">
+      Support Matplotlib
+    </a>
+  </div></div>
+    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -470,7 +480,8 @@ initialization. The logo is stored at
 <span class="c1"># extensions coming with Sphinx (named &#39;sphinx.ext.*&#39;) or your custom</span>
 <span class="c1"># ones.</span>
 <span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="s1">&#39;matplotlib.sphinxext.plot_directive&#39;</span><span class="p">,</span>
+    <span class="s2">&quot;matplotlib.sphinxext.plot_directive&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;sphinx_design&quot;</span>
 <span class="p">]</span>
 
 <span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
@@ -500,6 +511,12 @@ initialization. The logo is stored at
     <span class="c1"># - internal: Links point to the internal files as expanded by the `pathto`</span>
     <span class="c1">#   template function in Sphinx.</span>
     <span class="s2">&quot;navbar_links&quot;</span><span class="p">:</span> <span class="s2">&quot;absolute&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">html_sidebars</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;index&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s2">&quot;donate_sidebar.html&quot;</span><span class="p">,</span>
+    <span class="p">],</span>
 <span class="p">}</span>
 
 <span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>

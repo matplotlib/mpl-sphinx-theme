@@ -14,15 +14,15 @@ html[data-theme="dark"] {
 }
 
 :root {
---pst-color-link-hover: var(--pst-color-secondary);
+  --pst-color-link-hover: var(--pst-color-secondary);
 }
 
-.sidebar-cheatsheets, .sidebar-donate {
-  margin: 2.75rem 0;
+.sidebar-donate > .sd-btn {
+  width: 100%;
 }
 
 #navbar-icon-links {
-    margin-left: 1.5em;
+  margin-left: 1.5em;
 }
 
 #navbar-icon-links .nav-link {
@@ -32,4 +32,3 @@ html[data-theme="dark"] {
 #navbar-icon-links .nav-link:hover {
   color: var(--pst-color-primary);
 }
-
