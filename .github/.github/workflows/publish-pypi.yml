@@ -1,4 +1,6 @@
 name: Push to PyPI
+permissions:
+  contents: read
 
 on:
   push:
@@ -8,7 +10,10 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
-
+    permissions:
+      id-token: write
+      attestations: write
+      contents: read
     steps:
       - name: Checkout
         uses: actions/checkout@v1
