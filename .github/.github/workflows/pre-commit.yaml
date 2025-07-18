@@ -12,5 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@v2
       - uses: pre-commit/action@0764670bf370aab253130d534e1eda7ff497dc60 # v2.0.0
