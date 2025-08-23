@@ -32,3 +32,11 @@ html[data-theme="dark"] {
 #navbar-icon-links .nav-link:hover {
   color: var(--pst-color-primary);
 }
+
+/* reduce height of nav bar when items don't fit in one line
+   See https://github.com/pydata/pydata-sphinx-theme/pull/2117
+ */
+.navbar-item {
+  height: unset !important;
+  margin: 0.25rem 0;
+}
