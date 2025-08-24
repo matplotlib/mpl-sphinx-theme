@@ -2,11 +2,13 @@
 version: 2.1
 
 orbs:
-  python: circleci/python@1.2.1
+  python: circleci/python@3.2.0
 
 jobs:
   build_docs:
-    executor: python/default
+    executor:
+      name: python/default
+      tag: "3.11"
     steps:
       - checkout
       - python/install-packages:
