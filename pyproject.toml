@@ -19,7 +19,7 @@ classifiers = [
     "Topic :: Documentation :: Sphinx",
 ]
 dependencies = [
-    "pydata-sphinx-theme==0.17.0",
+    "pydata-sphinx-theme==0.17.1",
     "matplotlib",
     "sphinx-design",
 ]
