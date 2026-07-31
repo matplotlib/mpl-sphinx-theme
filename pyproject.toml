@@ -54,3 +54,20 @@ mpl_sphinx_theme = [
     "static/font/*.*",
     "components/*.html",
 ]
+
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+preview = ["pixi-build"]
+
+
+[tool.pixi.package]
+version = "3.11.1dev"
+name = "mpl-sphinx-theme"
+
+[tool.pixi.package.build.backend]
+name = "pixi-build-python"
+
+[tool.pixi.package.build.config]
+ignore-pypi-mapping = false
