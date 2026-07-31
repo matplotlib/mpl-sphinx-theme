@@ -63,7 +63,7 @@ preview = ["pixi-build"]
 
 
 [tool.pixi.package]
-version = "3.11.1dev"
+version = "3.11.1.dev0"
 name = "mpl-sphinx-theme"
 
 [tool.pixi.package.build.backend]
