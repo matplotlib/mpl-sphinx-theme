@@ -20,8 +20,12 @@ classifiers = [
 ]
 dependencies = [
     "pydata-sphinx-theme==0.20.0",
-    "matplotlib",
     "sphinx-design",
+]
+
+[dependency-groups]
+doc = [
+     "matplotlib"
 ]
 
 [project.urls]
