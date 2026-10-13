@@ -11,9 +11,9 @@ jobs:
       tag: "3.11"
     steps:
       - checkout
-      - python/install-packages:
-          pkg-manager: pip-dist
-          pip-dependency-file: docs/requirements.txt
+      - run:
+          name: Install dependencies
+          command: pip install --group doc -e .
       - run:
           name: Build docs
           command: make -C docs html
