@@ -63,6 +63,8 @@ preview = ["pixi-build"]
 
 
 [tool.pixi.package]
+# This needs to be updated when ever we do a release.  For now there is no
+# support for dynamic versions in pixi-build.
 version = "3.11.1.dev0"
 name = "mpl-sphinx-theme"
 

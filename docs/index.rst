@@ -77,3 +77,10 @@ Configuration for this demo
 The full ``conf.py`` is
 
 .. literalinclude:: conf.py
+
+
+Development
+~~~~~~~~~~~
+
+When releasing a new version the pixi-buil version in :file:`pyproject.toml`
+needs to be updated by hand (until pixi-build supports dynamic versioning).
