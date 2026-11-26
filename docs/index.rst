@@ -82,5 +82,5 @@ The full ``conf.py`` is
 Development
 ~~~~~~~~~~~
 
-When releasing a new version the pixi-buil version in :file:`pyproject.toml`
+When releasing a new version `tool.pixi.package.version` in :file:`pyproject.toml`
 needs to be updated by hand (until pixi-build supports dynamic versioning).
