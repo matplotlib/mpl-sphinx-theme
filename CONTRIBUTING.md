@@ -6,6 +6,6 @@ Installing the theme itself:
 
 After following the contribution guidelines in the Matplotlib docs, you will still need to install the theme itself to see the changes you made. At the root level of the repository run:
 
-`python -m pip install -e .`
+`python -m pip install --group doc -e .`
 
 After that you will be able to build the docs locally by doing `make html` in the `docs` directory.
